@@ -1,0 +1,16 @@
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.datasets import make_classification
+import pickle
+
+# Create dummy binary classification dataset
+X, y = make_classification(n_samples=100, n_features=1024, n_informative=10, n_classes=2, random_state=42)
+
+# Train dummy model
+model = RandomForestClassifier()
+model.fit(X, y)
+
+# Save model
+with open("model/model.pkl", "wb") as f:
+    pickle.dump(model, f)
+
+print("✅ Model saved as model/model.pkl")
