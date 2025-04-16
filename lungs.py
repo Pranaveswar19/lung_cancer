@@ -4,6 +4,7 @@ from PIL import Image
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array
 import os
+import gdown
 
 # Title
 st.set_page_config(page_title="Lung Cancer Detection", layout="centered")
@@ -12,6 +13,7 @@ st.markdown("Upload a **chest X-ray or CT scan** to check for signs of **lung ca
 
 # Load model
 model_path = "model/lung_model.h5"
+gdrive_url = "https://drive.google.com/file/d/1Qyp8Mnc0W87veyZb4JU5-eucMGFwjkh3/view?usp=sharing"
 
 if not os.path.exists(model_path):
     st.error("⚠️ Trained model not found! Please add `lung_model.h5` in the `model/` directory.")
