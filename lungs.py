@@ -68,4 +68,3 @@ if uploaded_file is not None:
 
     st.markdown("---")
     st.caption("⚠️ This tool is for educational purposes only and not a substitute for medical advice.")
-substitute for medical advice.")
