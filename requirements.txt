@@ -1,7 +1,5 @@
-streamlit==1.33.0
-tensorflow==2.17.1
+streamlit
+tensorflow
 numpy
 pillow
-scikit-learn
-matplotlib
 gdown
