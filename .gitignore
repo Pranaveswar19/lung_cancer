@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+env/
+venv/
+lung-env/
+
+# Streamlit
+.streamlit/config.toml
+
+# Model files (large binary files)
+model/*.h5
+model/*.pkl
+
+# OS
+.DS_Store
+Thumbs.db
